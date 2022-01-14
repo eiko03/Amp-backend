@@ -1,0 +1,74 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloutfrontend-dev-165013-authRole",
+      "UnauthRoleArn": "arn:aws:iam::581774521678:role/amplify-cloutfrontend-dev-165013-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::581774521678:role/amplify-cloutfrontend-dev-165013-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-cloutfrontend-dev-165013-deployment",
+      "UnauthRoleName": "amplify-cloutfrontend-dev-165013-unauthRole",
+      "StackName": "amplify-cloutfrontend-dev-165013",
+      "StackId": "arn:aws:cloudformation:us-east-2:581774521678:stack/amplify-cloutfrontend-dev-165013/c8e5f9f0-fc45-11eb-ac0e-0a701ad7d2c8",
+      "AmplifyAppId": "d2ep34cj1crwku"
+    }
+  },
+  "auth": {
+    "cloutfrontend": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanism": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloutfrontend-dev-165013-deployment/amplify-cfn-templates/auth/cloutfrontend-cloudformation-template.yml",
+        "logicalId": "authcloutfrontend"
+      },
+      "lastPushTimeStamp": "2021-09-07T21:13:47.755Z",
+      "output": {
+        "UserPoolId": "us-east-2_wFNq2KJTz",
+        "AppClientIDWeb": "7kjlq7dhkg2jg75usm89lc9gab",
+        "AppClientID": "2h2l6492pl7aad2adesatmt1bp",
+        "IdentityPoolId": "us-east-2:1c585c95-08a5-4897-bdaf-2fce5ad985b8",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:581774521678:userpool/us-east-2_wFNq2KJTz",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "UserPoolName": "cloutfrontend"
+      },
+      "lastPushDirHash": "+cUklJhWpF4XpCtFv8x9WwjAeYE="
+    }
+  },
+  "api": {},
+  "storage": {
+    "s309f6c592": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloutfrontend-dev-165013-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storages309f6c592"
+      },
+      "lastPushTimeStamp": "2021-09-07T21:13:47.759Z",
+      "output": {
+        "BucketName": "cloutshopify165013-dev",
+        "Region": "us-east-2"
+      },
+      "lastPushDirHash": "gKta64X8B2LN8QNTqtkK8wsvTFs="
+    }
+  }
+}
